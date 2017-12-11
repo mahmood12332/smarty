@@ -1,0 +1,317 @@
+<section class="single-page">
+  <div class="section-content bg-pattern dark-screen">
+   <div class="container">
+     <div class="clearfix">
+      <h1 class="page-top-heading pull-left">Portfolio</h1>
+    </div>
+    <ul class="nav nav-tabs" >
+      <li class="active"><a data-toggle="tab"  data-target="#home1" >{{list[0].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home2" >{{list[1].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home3" >{{list[2].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home4" >{{list[3].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home5" >{{list[4].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home6" >{{list[5].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home7" >{{list[6].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home8" >{{list[7].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home9" >{{list[8].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home10" >{{list[9].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home11" >{{list[10].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home12" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home13" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home14" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home15" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home16" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home17" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home18" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home19" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home20" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home21" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home22" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home23" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home24" >{{list[11].lnames}}</a></li>
+      <li><a data-toggle="tab" data-target="#home25" >{{list[11].lnames}}</a></li>
+    </ul>
+    <div class="image-loading">
+      <img width="100" style="display: inline-block;" ng-hide="loading" src="images/load.gif">
+    </div>
+    <div class="tab-content">
+      <div id="home1" class="tab-pane fade in active">
+        <h3>{{list[0].lnames}}</h3>
+        <div class="" ng-repeat="md in list[0].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class=" cat-img img-responsive" src="{{md.url}}">
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="home2" class="tab-pane fade">
+        <h3>{{list[1].lnames}}</h3>
+        <div ng-repeat="md in list[1].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home3" class="tab-pane fade">
+        <h3>{{list[2].lnames}}</h3>
+        <div ng-repeat="md in list[2].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home4" class="tab-pane fade">
+        <h3>{{list[3].lnames}}</h3>
+        <div ng-repeat="md in list[3].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home5" class="tab-pane fade">
+        <h3>{{list[4].lnames}}</h3>
+        <div ng-repeat="md in list[4].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home6" class="tab-pane fade">
+        <h3>{{list[5].lnames}}</h3>
+        <div ng-repeat="md in list[5].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home7" class="tab-pane fade">
+        <h3>{{list[6].lnames}}</h3>
+        <div ng-repeat="md in list[6].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home8" class="tab-pane fade">
+        <h3>{{list[7].lnames}}</h3>
+        <div ng-repeat="md in list[7].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home9" class="tab-pane fade">
+        <h3>{{list[8].lnames}}</h3>
+        <div ng-repeat="md in list[8].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home10" class="tab-pane fade">
+        <h3>{{list[9].lnames}}</h3>
+        <div ng-repeat="md in list[9].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home11" class="tab-pane fade">
+        <h3>{{list[10].lnames}}</h3>
+        <div ng-repeat="md in list[10].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img" src="{{ md.url }}">
+          </di
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>v>
+        </div>
+      </div>
+      <div id="home12" class="tab-pane fade">
+        <h3>{{list[11].lnames}}</h3>
+        <div ng-repeat="md in list[11].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home13" class="tab-pane fade">
+        <h3>{{list[12].lnames}}</h3>
+        <div ng-repeat="md in list[12].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home14" class="tab-pane fade">
+        <h3>{{list[13].lnames}}</h3>
+        <div ng-repeat="md in list[13].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home15" class="tab-pane fade">
+        <h3>{{list[14].lnames}}</h3>
+        <div ng-repeat="md in list[14].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home16" class="tab-pane fade">
+        <h3>{{list[15].lnames}}</h3>
+        <div ng-repeat="md in list[15].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home17" class="tab-pane fade">
+        <h3>{{list[16].lnames}}</h3>
+        <div ng-repeat="md in list[16].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home18" class="tab-pane fade">
+        <h3>{{list[17].lnames}}</h3>
+        <div ng-repeat="md in list[17].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home19" class="tab-pane fade">
+        <h3>{{list[18].lnames}}</h3>
+        <div ng-repeat="md in list[18].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home20" class="tab-pane fade">
+        <h3>{{list[19].lnames}}</h3>
+        <div ng-repeat="md in list[19].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home21" class="tab-pane fade">
+        <h3>{{list[20].lnames}}</h3>
+        <div ng-repeat="md in list[20].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home22" class="tab-pane fade">
+        <h3>{{list[21].lnames}}</h3>
+        <div ng-repeat="md in list[21].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home23" class="tab-pane fade">
+        <h3>{{list[22].lnames}}</h3>
+        <div ng-repeat="md in list[22].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home24" class="tab-pane fade">
+        <h3>{{list[23].lnames}}</h3>
+        <div ng-repeat="md in list[23].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home25" class="tab-pane fade">
+        <h3>{{list[24].lnames}}</h3>
+        <div ng-repeat="md in list[24].images">
+          <div class="abc col-xs-12 col-sm-6 col-md-4">
+            <img class="cat-img img-responsive" src="{{ md.url }}">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- .container -->
+</div><!-- .section-content -->
+</section>

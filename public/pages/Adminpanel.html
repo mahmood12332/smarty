@@ -1,0 +1,78 @@
+<section class="single-page">
+    <div class="section-content bg-pattern dark-screen">
+       <div class="section-page container">
+        <div class="text-center" ng-controller="addcatController">
+            <h1 class="no-top-margin">Add Category</h1>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p>
+                        Mirum est notare quam littera 
+                        gothica, quam nunc putamus parum claram, anteposuerit litterarum formas 
+                        humanitatis per seacula quarta decima et quinta decima. Eodem modo typi,
+                        qui nunc nobis videntur parum clari.
+                    </p>
+                </div>
+            </div>
+            <div class="cato-btn">
+              <button  type="button" ng-hide="catogaries" class="btn btn-primary" data-toggle="modal" data-target="#myModal" >Add Catogories</button>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="admin" ng-controller="loginController">
+<!--                 <div class="cato-btn">
+                    <button ng-hide="catogaries"   type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Catogories</button>
+                </div> -->
+                <div class="mod">
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="text-center" >
+                          <div class="form-group row" style="margin: 10px 0;">
+                              <input class="form-control " type="text" ng-model="lnames" >
+                          </div>
+                          <button type="button" class="btn btn-secondary" ng-click="populate()" data-dismiss="modal">Add</button>
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="admin">
+              <div class="container text-center">
+                  <div >
+                    <div>
+                      <table class="table" >
+                        <thead>
+                          <tr>
+                            <th>Categories:</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="ls in list">
+                            <td><a style="color: #999" ng-href="#!{{ls.$id}}/image">{{ ls.lnames}}</a><button style="margin-left: 50px;" class="btn btn-danger" ng-click="list.$remove(ls)">x</button></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div class="image-loading">
+                            <img width="100" style="display: inline-block;" ng-hide="loading" src="images/load.gif">
+                          </div>
+                    </div> 
+                  </div>
+                </div>
+                </div>
+        </div><!-- .clearfix -->
+    </div><!-- .section-page -->
+</div><!-- .section-content -->
+</section>

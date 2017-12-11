@@ -1,0 +1,41 @@
+<section class="single-page">
+        <div class="section-content bg-pattern dark-screen">
+           <div class="section-page container">
+            <div class="text-center">
+                <h1 class="no-top-margin">Add Catogories Images</h1>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div style="float: left;width: 100%;background-color: #f1f1f1;" ng-controller="imagesController as vm">
+                  <div ng-repeat="ls in list">
+                    <h1 style="text-align:left;">{{ ls.$value }}</h1>
+                </div>
+
+                <form style="float:left;width:100%;padding: 10px 0">
+                    <input type="file" accept="image/*" custom-on-change="vm.image" >
+                </form>
+                <br>
+                <div class="image-loading">
+                    <img width="100" style="display: inline-block;" ng-hide="loading" src="images/load.gif">
+                </div>
+                <div ng-repeat="image in vm.images | orderBy: '-date'" class="col-xs-12 col-sm-6 col-md-4">
+                    <div style="position: relative;" class="col-xs-12 col-sm-12 col-md-12">
+                      <img class="cat-img"  ng-src="{{image.url}}">
+                      <button class="btn btn-danger btn-delete" ng-click="vm.deleteImg(image.$id)"><span class="fa fa-trash"></span></button>
+                  </div>
+                    <!--       <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a href="{{image.url}}" class="btn btn-info btn-block" download>Download</a>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a class="btn btn-danger btn-block" ng-click="vm.deleteImg(image.$id)">Delete</a>
+                    </div> -->
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
